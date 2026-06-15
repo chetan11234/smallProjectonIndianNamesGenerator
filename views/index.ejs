@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indian Names Generator</title>
+    <link rel="stylesheet" href="/style/main.css">
 </head>
 <body>
-    
+    <main class="container">
+        <section class="panel formBlock">
+            <p class="eyebrow">Mini Indian Name Generator</p>
+            <h1>Generate a fresh name in one tap</h1>
+            <p class="lead">A simple, modern-looking app that gives you a random Indian-inspired name instantly.</p>
+
+            <form method="post" action="/name">
+                <button type="submit">✨ Generate Name</button>
+            </form>
+
+            <div class="featureGrid">
+                <article class="featureCard">Fast & simple</article>
+                <article class="featureCard">Modern design</article>
+                <article class="featureCard">Easy to customize</article>
+                <article class="featureCard">Responsive layout</article>
+            </div>
+        </section>
+
+        <section class="panel nameBlock">
+            <div class="nameCard">
+                <p class="label">Your generated name</p>
+                <span class="nameBadge"><%= fName %></span>
+                <p class="helper">Click the button to get another name.</p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
